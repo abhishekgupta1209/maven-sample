@@ -1,6 +1,6 @@
 node {
 //     parallel master: {
-        publishCoverage adapters: [jacocoAdapter('target/site/jacoco/jacoco.xml')]
+        publishCoverage adapters: [jacoco('target/site/jacoco/jacoco.xml')]
 // }
 }
 // node {
