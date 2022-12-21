@@ -1,7 +1,7 @@
 node {
-    parallel master: {
+//     parallel master: {
         publishCoverage adapters: [jacocoAdapter('target/site/jacoco/jacoco.xml')]
-}
+// }
 }
 // node {
 //   stage('SCM') {
