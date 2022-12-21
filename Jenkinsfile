@@ -1,9 +1,7 @@
 node {
-    parallel firstBranch: {
+    parallel master: {
         publishCoverage adapters: [jacocoAdapter('target/site/jacoco/jacoco.xml')]
-}, secondBranch: {
-        publishCoverage adapters: [jacocoAdapter('jacoco.xml')]
-    }
+}
 }
 node {
   stage('SCM') {
